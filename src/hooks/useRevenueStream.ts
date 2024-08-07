@@ -42,7 +42,7 @@ const useRevenueStream = () => {
                 setError(`Websocket error: ${event}`)
             }
         return () => {
-                if (socket.readyState) {
+                if (socket.readyState === WebSocket.OPEN) {
                     socket.send(JSON.stringify({ action: 'unsubscribe' }));
                     socket.close()
                 }
