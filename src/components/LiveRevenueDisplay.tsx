@@ -22,7 +22,7 @@ const LiveRevenueDisplay: React.FC = () => {
 
 	return (
 		<div>
-			<h2>Live Rename</h2>
+			<h2>Live Revenue</h2>
 			<p>{formattedRevenue}</p>
 			<p>
 				{hours}:{minutes}:{seconds}
